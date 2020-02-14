@@ -1,0 +1,18 @@
+COLUMN TABLE "CUSTOMERS" ( 
+	 "Customer ID"     INTEGER
+	,"FIRST_NAME"      NVARCHAR(200)
+	,"LAST_NAME"       NVARCHAR(200)
+	,"EMAIL"           NVARCHAR(200)
+	,"GENDER"          NVARCHAR(20)
+	,"CUSTOMER_SINCE"  DATE
+	,"IP_ADDRESS"      NVARCHAR(200)
+	,"LON"             DECIMAL
+	,"LAT"             DECIMAL
+	,"NUMBER"          NVARCHAR(20)
+	,"STREET"          NVARCHAR(200)
+	,"UNIT"            NVARCHAR(200)
+	,"CITY"            NVARCHAR(200)
+	,"COUNTY"          NVARCHAR(200)
+	,"STATE"           NVARCHAR(200)
+	,"ZIP"             NVARCHAR(20)
+    , PRIMARY KEY ("Customer ID") )

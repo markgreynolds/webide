@@ -1,0 +1,130 @@
+{
+	"format_version": 1,
+	"imports": [{
+		"target_table": "EMPLOYEE",
+		"source_data": {
+			"data_type": "CSV",
+			"file_name": "Employee.csv",
+			"has_header": false,
+			"dialect": "HANA",
+			"type_config": {
+				"delimiter": ","
+			}
+		},
+		"import_settings": {
+         	"include_filter" : [ ],		
+			"import_columns": [
+				"ID",
+				"NAME",
+				"ACTIVE",
+				"COUNTRY"
+			]
+		},
+		"column_mappings": {
+			"ID": 1,
+			"NAME":2,
+			"ACTIVE": 3,
+			"COUNTRY": 4
+		}
+	},{
+		"target_table": "BILLS",
+		"source_data": {
+			"data_type": "CSV",
+			"file_name": "Bills.csv",
+			"has_header": true,
+			"dialect": "HANA",
+			"type_config": {
+				"delimiter": ","
+			}
+		},
+		"import_settings": {
+         	"include_filter" : [ ],		
+			"import_columns": [
+			     "Bill ID"
+				,"Customer ID"
+				,"Bill Date"
+				,"Bill Amount"
+				,"Previous Bill Amt"
+				,"Payment Receivied"
+				,"Bill Meter"
+				,"Previous Meter"
+				,"Usage"
+				,"BTU Factor"
+				,"Therms"
+				,"Price Per Therm"
+				,"Consumption Charge"
+				,"Service Charge"
+				,"Pass Through Charges"
+				,"Taxes"
+			]
+		},
+		"column_mappings": {
+		     "Bill ID" : 1
+			,"Customer ID": 2
+			,"Bill Date" : 3
+			,"Bill Amount" : 4
+			,"Previous Bill Amt" : 5
+			,"Payment Receivied" : 6
+			,"Bill Meter" : 7
+			,"Previous Meter" : 8
+			,"Usage" : 9
+			,"BTU Factor": 10
+			,"Therms" : 11
+			,"Price Per Therm" : 12
+			,"Consumption Charge" : 13
+			,"Service Charge" : 14
+			,"Pass Through Charges" : 15
+			,"Taxes" : 16
+		}
+	},{
+		"target_table": "CUSTOMERS",
+		"source_data": {
+			"data_type": "CSV",
+			"file_name": "Customers.csv",
+			"has_header": true,
+			"dialect": "HANA",
+			"type_config": {
+				"delimiter": ","
+			}
+		},
+		"import_settings": {
+         	"include_filter" : [ ],		
+			"import_columns": [
+			      "Customer ID"
+				, "FIRST_NAME"
+				, "LAST_NAME"
+				, "EMAIL"
+				, "GENDER"
+				, "CUSTOMER_SINCE"
+				, "IP_ADDRESS"
+				, "LON"
+				, "LAT"
+				, "NUMBER"
+				, "STREET"
+				, "UNIT"
+				, "CITY"
+				, "COUNTY"
+				, "STATE"
+				, "ZIP"
+			]
+		},
+		"column_mappings": {
+		      "Customer ID" : 1
+			, "FIRST_NAME" : 2
+			, "LAST_NAME" : 3
+			, "EMAIL" : 4
+			, "GENDER" : 5
+			, "CUSTOMER_SINCE" : 6
+			, "IP_ADDRESS" : 7
+			, "LON" : 8
+			, "LAT" : 9
+			, "NUMBER" : 10
+			, "STREET" : 11
+			, "UNIT" : 12
+			, "CITY" : 13
+			, "COUNTY" : 14
+			, "STATE" : 15
+			, "ZIP" : 16
+		}
+	}]
+}
