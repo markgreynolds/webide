@@ -207,7 +207,6 @@
 				"AWATER", 
 				"INTPTLAT", 
 				"INTPTLON", 
-				"SHAPE", 
 				"SHAPE_3857"
 			]
 		},
@@ -229,7 +228,6 @@
 			"AWATER" : 15, 
 			"INTPTLAT" : 16, 
 			"INTPTLON" : 17, 
-			"SHAPE" : 18, 
 			"SHAPE_3857" : 19
 		}
 	}]
