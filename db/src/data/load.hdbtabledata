@@ -1,32 +1,6 @@
 {
 	"format_version": 1,
 	"imports": [{
-		"target_table": "EMPLOYEE",
-		"source_data": {
-			"data_type": "CSV",
-			"file_name": "Employee.csv",
-			"has_header": false,
-			"dialect": "HANA",
-			"type_config": {
-				"delimiter": ","
-			}
-		},
-		"import_settings": {
-         	"include_filter" : [ ],		
-			"import_columns": [
-				"ID",
-				"NAME",
-				"ACTIVE",
-				"COUNTRY"
-			]
-		},
-		"column_mappings": {
-			"ID": 1,
-			"NAME":2,
-			"ACTIVE": 3,
-			"COUNTRY": 4
-		}
-	},{
 		"target_table": "BILLS",
 		"source_data": {
 			"data_type": "CSV",
