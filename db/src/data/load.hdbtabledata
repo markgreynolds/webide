@@ -126,5 +126,81 @@
 			, "STATE" : 15
 			, "ZIP" : 16
 		}
+	},{
+		"target_table": "TIME_DIMENSION",
+		"source_data": {
+			"data_type": "CSV",
+			"file_name": "TimeDimension.csv",
+			"has_header": false,
+			"dialect": "HANA",
+			"type_config": {
+				"delimiter": ","
+			}
+		},
+		"import_settings": {
+         	"include_filter" : [ ],		
+			"import_columns": [
+				"DATE_SQL",
+				"DATETIME_SAP",
+				"DATE_SAP",
+				"YEAR",
+				"QUARTER",
+				"MONTH",
+				"WEEK",
+				"WEEK_YEAR",
+				"DAY_OF_WEEK",
+				"DAY",
+				"HOUR",
+				"MINUTE",
+				"SECOND",
+				"CALQUARTER",
+				"CALMONTH",
+				"CALWEEK",
+				"YEAR_INT",
+				"QUARTER_INT",
+				"MONTH_INT",
+				"WEEK_INT",
+				"WEEK_YEAR_INT",
+				"DAY_OF_WEEK_INT",
+				"DAY_INT",
+				"HOUR_INT",
+				"MINUTE_INT",
+				"SECOND_INT",
+				"MONTH_LAST_DAY",
+				"TZNTSTMPS",
+				"TZNTSTMPL"
+			]
+		},
+		"column_mappings": {
+			"DATE_SQL" : 1,
+			"DATETIME_SAP" : 2,
+			"DATE_SAP" : 3,
+			"YEAR" : 4,
+			"QUARTER" : 5,
+			"MONTH" : 6,
+			"WEEK" : 7,
+			"WEEK_YEAR" : 8,
+			"DAY_OF_WEEK" : 9,
+			"DAY" : 10,
+			"HOUR" : 11,
+			"MINUTE" : 12,
+			"SECOND" : 13,
+			"CALQUARTER" : 14,
+			"CALMONTH" : 15,
+			"CALWEEK" : 16,
+			"YEAR_INT" : 17,
+			"QUARTER_INT" : 18,
+			"MONTH_INT" : 19,
+			"WEEK_INT" : 20,
+			"WEEK_YEAR_INT" : 21,
+			"DAY_OF_WEEK_INT" : 22,
+			"DAY_INT" : 23,
+			"HOUR_INT" : 24,
+			"MINUTE_INT" : 25,
+			"SECOND_INT" : 26,
+			"MONTH_LAST_DAY" : 27,
+			"TZNTSTMPS" : 28,
+			"TZNTSTMPL" : 29
+		}
 	}]
 }
