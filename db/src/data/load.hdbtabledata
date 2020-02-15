@@ -176,5 +176,61 @@
 			"TZNTSTMPS" : 28,
 			"TZNTSTMPL" : 29
 		}
+	},{
+		"target_table": "COUNTIES",
+		"source_data": {
+			"data_type": "CSV",
+			"file_name": "Counties.csv",
+			"has_header": true,
+			"dialect": "HANA",
+			"type_config": {
+				"delimiter": ","
+			}
+		},
+		"import_settings": {
+         	"include_filter" : [ ],		
+			"import_columns": [
+				"STATEFP",
+				"COUNTYFP",
+				"COUNTYNS", 
+				"GEOID", 
+				"NAME", 
+				"NAMELSAD", 
+				"LSAD", 
+				"CLASSFP", 
+				"MTFCC", 
+				"CSAFP", 
+				"CBSAFP", 
+				"METDIVFP", 
+				"FUNCSTAT", 
+				"ALAND", 
+				"AWATER", 
+				"INTPTLAT", 
+				"INTPTLON", 
+				"SHAPE", 
+				"SHAPE_3857"
+			]
+		},
+		"column_mappings": {
+			"STATEFP" : 1,
+			"COUNTYFP" : 2,
+			"COUNTYNS" : 3, 
+			"GEOID" : 4, 
+			"NAME" : 5, 
+			"NAMELSAD" : 6, 
+			"LSAD" : 7, 
+			"CLASSFP" : 8, 
+			"MTFCC" : 9, 
+			"CSAFP" : 10, 
+			"CBSAFP" : 11, 
+			"METDIVFP" : 12, 
+			"FUNCSTAT" : 13, 
+			"ALAND" : 14, 
+			"AWATER" : 15, 
+			"INTPTLAT" : 16, 
+			"INTPTLON" : 17, 
+			"SHAPE" : 18, 
+			"SHAPE_3857" : 19
+		}
 	}]
 }

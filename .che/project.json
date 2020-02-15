@@ -1,1 +1,1 @@
-{"type":"mta","builders":{"default":"mtabuilder","configs":{}},"runners":{"configs":{}},"attributes":{"sap.watt.common.setting":["{\"hdbInactiveFiles\":{\"inactiveFileList\":[\"/webide/db/src/TimeDimension.hdbtable\",\"/webide/db/src/data/load.hdbtabledata\"]}}"]},"mixinTypes":[]}
+{"type":"mta","builders":{"default":"mtabuilder","configs":{}},"runners":{"configs":{}},"attributes":{"sap.watt.common.setting":["{\"hdbInactiveFiles\":{\"inactiveFileList\":[]}}"]},"mixinTypes":[]}
